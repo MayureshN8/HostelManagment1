@@ -5,7 +5,7 @@ FROM tomcat:9.0-jdk11
 RUN rm -rf /usr/local/tomcat/webapps/*
 
 # Copy your WAR file to ROOT.war so it auto-deploys
-COPY target/HostelManagementSystem.war /usr/local/tomcat/webapps/ROOT.war
+COPY target/HostelManagementSystem.war /usr/local/tomcat/webapps/HostelManagementSystem.war
 
 # Expose port 8080
 EXPOSE 8080
